@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>조이플의 모든 것</title>
+<style>
+	body {
+		background-color: linen;
+		color: blueviolet;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	h3 {
+		color: brown;
+	}
+	h3:first-letter {
+		color: red;
+	}
+	strong {
+		text-decoration: overline;
+	}
+	ul {
+		list-style-type: lower-alpha;
+	}
+	input[type=text] {
+		color: skyblue;
+	}
+</style>
+</head>
+<body>
+	<h3>Joyple</h3>
+	<hr>
+	<p>조이플은 컴퓨터 프로그래밍 서비스업 업종을 하는 중소기업 회사 입니다.</p>
+	<ul>
+		<li><a href="https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=L91379&siteid=NAVER">조이플 정보 사이트</a></li>
+		<li><strong>사이트 미리보기</strong></li>
+		<iframe src="https://www.nicebizinfo.com/ep/EP0100M002GE.nice?kiscode=L91379&siteid=NAVER" width="500" height="100"></iframe>
+	</ul>
+	<p>
+		조이플에 관한 <mark>세부적인 정보</mark>검색<br>
+		<form name="sform"
+		action="https://search.naver.com/search.naver" method="get">
+			<input name="query" type="text">
+			<button type="sybmit">검색</button>
+		</form>
+		<a href="C:/WebProgramming/location.html">산업 내 위치</a>
+		<a href="C:/WebProgramming/week.html">출근일과 휴일</a>
+		<a href="C:/WebProgramming/corporation.html">기업 정보</a>
+		<a href="C:/WebProgramming/search.html">검색</a>
+	</p>
+	<p id="p">더욱 세밀한 기업 정보가 나오는 버튼</p>
+	<button onclick="f(event)">클 릭</button>
+	<script>
+		function f(e) {
+			let text = "성장성은 적으나 수익성은 최근 2년간 크게 상승 하였으며, 활동성 또한 2년간 상승 추세이다." + "<br>"
+			+ "이자보상비율도 오르는 추세이며, EBITDA대매출액 또한 1년간 주춤 했다가 다시 오르는 추세이다." + "<br>";
+
+			let p = document.getElementById("p");
+			p.innerHTML = text;
+		}
+	</script>
+</body>
+</html>
